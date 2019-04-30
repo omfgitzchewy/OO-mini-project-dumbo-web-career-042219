@@ -12,20 +12,20 @@ peanuts = Ingredient.new("Peanuts")
 gluten = Ingredient.new("Gluten")
 
 choconut = Recipe.new("Peanut Butter Chocolate Chip Cookies")
-	choconut.add_ingredients(chocolate)
-	choconut.add_ingredients(peanuts)
+choconut.add_ingredients(chocolate)
+choconut.add_ingredients(peanuts)
 
 pancakes = Recipe.new("Pancakes")
-	pancakes.add_ingredients(gluten)
+pancakes.add_ingredients(gluten)
 
 steak = Recipe.new("Sirloin Steak")
 
 penne = Recipe.new("Penne Arrabiatta")
-	penne.add_ingredients(gluten)
-	penne.add_ingredients(lactose)
+penne.add_ingredients(gluten)
+penne.add_ingredients(lactose)
 
 dumplings = Recipe.new("Grandma's Homemade Soup Dumplings")
-	dumplings.add_ingredients(gluten)
+dumplings.add_ingredients(gluten)
 
 
 allergy1 = Allergy.new(aaron, lactose)

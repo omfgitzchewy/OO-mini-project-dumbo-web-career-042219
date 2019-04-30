@@ -31,16 +31,17 @@ attr_accessor :name
 		arr.map {|allergy| allergy.ingredient }
 	end
 
-	def safe_recipes
-		arr = self.allergens
-		arr2 = Recipe.all.map {|recipe| recipe.ingredients}
-		arr.select do |allergen|
-			arr2.include?(allergen)
-	end
-	end
+  #BONUS...WORK IN PROGRESS
+	# def safe_recipes
+	#  arr = self.allergens
+	#  arr2 = Recipe.all.map {|recipe| recipe.ingredients}
+	#  arr.select do |allergen|
+	# 	arr2.include?(allergen)
+	#  end
+	# end
 
 	def top_three_recipes
-		arr = RecipeCard.all.select { |recipe| recipe.user == self }
+	  arr = RecipeCard.all.select { |recipe| recipe.user == self }
 		arr.sort_by(&:rating)[-3..-1]
 	end
 
